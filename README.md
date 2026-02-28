@@ -8,6 +8,14 @@ El objetivo es identificar clientes con alta probabilidad de cancelar el servici
 
 ---
 
+## 📂 Dataset
+
+El dataset utilizado corresponde a información histórica de clientes de TelecomX e incluye variables demográficas, servicios contratados y facturación mensual.
+
+Archivo incluido en el repositorio: `datos_tratados.csv`
+
+---
+
 ## 🎯 Objetivos
 
 - Preparar y limpiar los datos para modelado.
@@ -35,7 +43,7 @@ El objetivo es identificar clientes con alta probabilidad de cancelar el servici
 1. Limpieza y transformación de datos.
 2. Codificación de variables categóricas (One-Hot Encoding).
 3. Análisis de correlación y análisis dirigido.
-4. División en conjunto de entrenamiento y prueba.
+4. División en conjunto de entrenamiento y prueba (train/test split).
 5. Entrenamiento de modelos:
    - Regresión Logística (con estandarización y balanceo de clases).
    - Random Forest (con balanceo de clases).
@@ -51,14 +59,15 @@ El objetivo es identificar clientes con alta probabilidad de cancelar el servici
 
 ## 📈 Resultados
 
-- La Regresión Logística mostró mayor capacidad de detección de clientes en riesgo (Recall más alto).
-- Random Forest presentó mayor exactitud global.
+- La Regresión Logística mostró mayor capacidad de detección de clientes en riesgo (Recall = 0.79).
+- Random Forest presentó mayor exactitud global (Accuracy = 0.78).
 - El tipo de contrato y la antigüedad del cliente fueron factores determinantes en la cancelación.
-
-Dado que el objetivo del negocio es anticipar la cancelación, se priorizó el modelo con mayor capacidad de detección de churn.
+- Se priorizó el modelo con mayor capacidad de detección de churn para fines estratégicos.
 
 ---
 
 ## 📌 Conclusión
 
-El modelo predictivo permite a TelecomX adoptar un enfoque preventivo en la gestión de clientes, facilitando la implementación de estrategias de retención basadas en evidencia cuantitativa.
+El modelo predictivo permite a TelecomX adoptar un enfoque preventivo en la gestión de clientes, facilitando la implementación de estrategias de retención basadas en evidencia cuantitativa.  
+
+Este proyecto demuestra la aplicación práctica de técnicas de Machine Learning para la toma de decisiones estratégicas en entornos empresariales.
